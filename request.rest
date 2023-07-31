@@ -1,0 +1,36 @@
+###Get All Users
+GET http://localhost:3003/users
+
+###Post new User
+POST http://localhost:3003/users
+Content-Type: application/json
+
+{
+  "id": "u004",
+  "name": "Ruan",
+  "email": "ruan2@gmail.com",
+  "password": "123"
+}
+
+###Get All Accounts
+GET http://localhost:3003/accounts
+
+###Get a Account Balance
+GET http://localhost:3003/accounts/a001/balance
+
+###Post new Account
+POST http://localhost:3003/accounts
+Content-Type: application/json
+
+{
+  "id": "a003",
+  "ownerId": "u003"
+}
+
+###Edit a Account
+PUT http://localhost:3003/accounts/a001/balance
+Content-Type: application/json
+
+{
+  "value": 3000
+}
